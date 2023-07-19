@@ -7,6 +7,7 @@ import Courses from "./Components/Courses";
 import Posts from "./Components/Posts";
 import Profile from "./Components/Profile";
 import Purchased from "./Components/Purchased";
+import Footer from "./Components/footer";
 
 function App() {
   return (
@@ -14,20 +15,25 @@ function App() {
       <>
         <AppBar />
         <div className="flex ">
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/me" element={<Profile />} />
-            <Route path="/users" element={<Users />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/posts" element={<Posts />} />
-            <Route path="/purchased" element={<Purchased />} />
-            <Route path="/notes" element={<Users />} />
-            <Route path="/forms" element={<Users />} />
-            <Route path="/calendar" element={<Users />} />
-            <Route path="/setting" element={<Users />} />
-          </Routes>
+          <div className="flex-1">
+            <NavBar />
+          </div>
+          <div className="flex-[5_5_0%]">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/me" element={<Profile />} />
+              <Route path="/users" element={<Users />} />
+              <Route path="/courses" element={<Courses />} />
+              <Route path="/posts" element={<Posts />} />
+              <Route path="/purchased" element={<Purchased />} />
+              <Route path="/notes" element={<Users />} />
+              <Route path="/forms" element={<Users />} />
+              <Route path="/calendar" element={<Users />} />
+              <Route path="/setting" element={<Users />} />
+            </Routes>
+          </div>
         </div>
+        <Footer />
       </>
     </BrowserRouter>
   );

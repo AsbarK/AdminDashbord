@@ -11,6 +11,9 @@ export default {
         "soft-color": "#ddd",
         "dark-color": "#2a3447",
       },
+      gridAutoRows: {
+        boxfr: "minmax(180px, auto)",
+      },
     },
   },
   plugins: [],
