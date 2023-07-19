@@ -4,8 +4,13 @@ import {
   chartBoxRevenue,
   chartBoxProduct,
   chartBoxUser,
+  barChartBoxVisit,
+  barChartBoxRevenue,
 } from "../data";
 import HeighestRated from "./HeighestRated";
+import AreaChartCustom from "./charts/AreaChart";
+import BarChartBox from "./charts/BarChart";
+import PieChartBox from "./charts/PieChart";
 function HomePage() {
   return (
     <div className="grid grid-cols-4 auto-rows-boxfr gap-4 m-4">
@@ -35,7 +40,7 @@ function HomePage() {
         />
       </div>
       <div className="border-2 border-soft-bg rounded-xl row-span-3 col-span-1">
-        box4
+        <PieChartBox />
       </div>
       <div className="border-2 border-soft-bg rounded-xl col-span-1 row-span-1">
         <ChartLine
@@ -60,13 +65,23 @@ function HomePage() {
         />
       </div>
       <div className="border-2 border-soft-bg rounded-xl col-span-2 row-span-2">
-        box7
+        <AreaChartCustom />
       </div>
       <div className="border-2 border-soft-bg rounded- col-span-1 row-span-1">
-        box8
+        <BarChartBox
+          title={barChartBoxVisit.title}
+          color={barChartBoxVisit.color}
+          dataKey={barChartBoxVisit.dataKey}
+          chartData={barChartBoxVisit.chartData}
+        />
       </div>
       <div className="border-2 border-soft-bg rounded- col-span-1 row-span-1">
-        box8
+        <BarChartBox
+          title={barChartBoxRevenue.title}
+          color={barChartBoxRevenue.color}
+          dataKey={barChartBoxRevenue.dataKey}
+          chartData={barChartBoxRevenue.chartData}
+        />
       </div>
     </div>
   );

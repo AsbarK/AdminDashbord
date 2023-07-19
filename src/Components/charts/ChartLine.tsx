@@ -41,12 +41,12 @@ function ChartLine(props: Props) {
             <Tooltip
               contentStyle={{ background: "transparent", border: "none" }}
               labelStyle={{ display: "none" }}
-              position={{ x: 10, y: 70 }}
+              position={{ x: -5, y: 70 }}
             />
             <Line
               type="monotone"
               dataKey={props.dataKey}
-              stroke="#8884d8"
+              stroke={props.color}
               strokeWidth={2}
               dot={false}
             />
