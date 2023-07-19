@@ -7,24 +7,29 @@ import Courses from "./Components/Courses";
 import Posts from "./Components/Posts";
 import Profile from "./Components/Profile";
 import Purchased from "./Components/Purchased";
+
 function App() {
   return (
-    <>
-      <AppBar />
-      <div className="flex ">
-        <NavBar />
-        <BrowserRouter>
+    <BrowserRouter>
+      <>
+        <AppBar />
+        <div className="flex ">
+          <NavBar />
           <Routes>
-            <Route path="/" element={<HomePage />}></Route>
-            <Route path="/courses" element={<Courses />}></Route>
-            <Route path="/posts" element={<Posts />}></Route>
-            <Route path="/me" element={<Profile />}></Route>
-            <Route path="/purchased" element={<Purchased />}></Route>
-            <Route path="/users" element={<Users />}></Route>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/me" element={<Profile />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/posts" element={<Posts />} />
+            <Route path="/purchased" element={<Purchased />} />
+            <Route path="/notes" element={<Users />} />
+            <Route path="/forms" element={<Users />} />
+            <Route path="/calendar" element={<Users />} />
+            <Route path="/setting" element={<Users />} />
           </Routes>
-        </BrowserRouter>
-      </div>
-    </>
+        </div>
+      </>
+    </BrowserRouter>
   );
 }
 
