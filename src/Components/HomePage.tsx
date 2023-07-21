@@ -13,7 +13,7 @@ import BarChartBox from "./charts/BarChart";
 import PieChartBox from "./charts/PieChart";
 function HomePage() {
   return (
-    <div className="grid grid-cols-4 auto-rows-boxfr gap-4 m-4">
+    <div className="grid xl:grid-cols-4 auto-rows-boxfr gap-4 my-4 mr-4 p-4 lg:grid-cols-3 sm:border-2 sm:border-dark-bg sm:border-l-soft-bg md:grid-cols-2 grid-cols-1">
       <div className="border-2 border-soft-bg rounded-xl row-span-3 col-span-1">
         <HeighestRated />
       </div>
@@ -39,7 +39,7 @@ function HomePage() {
           percentage={chartBoxProduct.percentage}
         />
       </div>
-      <div className="border-2 border-soft-bg rounded-xl row-span-3 col-span-1">
+      <div className="border-2 border-soft-bg rounded-xl mobile:row-span-3 col-span-1 row-span-1">
         <PieChartBox />
       </div>
       <div className="border-2 border-soft-bg rounded-xl col-span-1 row-span-1">
@@ -64,7 +64,7 @@ function HomePage() {
           percentage={chartBoxRevenue.percentage}
         />
       </div>
-      <div className="border-2 border-soft-bg rounded-xl col-span-2 row-span-2">
+      <div className="mobile:border-2 mobile:border-soft-bg mobile:rounded-xl md:col-span-2 md:row-span-2 mobile:row-span-1 mobile:col-span-1 mobile:block hidden">
         <AreaChartCustom />
       </div>
       <div className="border-2 border-soft-bg rounded-xl col-span-1 row-span-1">

@@ -11,19 +11,19 @@ function AppBar() {
         <img
           src="search.svg"
           alt="search icon"
-          className="w-7 h-8 rounded-full m-2"
+          className="w-7 h-8 rounded-full m-2 mobile:block hidden"
         />
         <img
           src="bell.svg"
           alt="notification icon"
-          className="w-7 h-8 rounded-full m-2"
+          className="w-7 h-8 rounded-full m-2 mobile:block hidden"
         />
         <img
           src="profilephoto.jpg"
           alt="profile photo"
           className="w-7 h-8 rounded-full m-2"
         />
-        <span className="text-soft-color text-xl font-bold mx-2 pt-1">
+        <span className="text-main-color text-xl font-bold mx-2 pt-1">
           Asbar
         </span>
       </div>

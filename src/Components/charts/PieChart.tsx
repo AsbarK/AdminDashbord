@@ -17,7 +17,7 @@ const PieChartBox = () => {
         Leads by Source
       </h1>
       <div className="h-[50%] w-[100%] ">
-        <ResponsiveContainer width="99%" height={300}>
+        <ResponsiveContainer width="99%" height="100%">
           <PieChart>
             <Tooltip
               contentStyle={{ background: "white", borderRadius: "5px" }}
@@ -36,10 +36,10 @@ const PieChartBox = () => {
           </PieChart>
         </ResponsiveContainer>
       </div>
-      <div className="flex justify-between">
+      <div className="mobile:flex justify-between hidden ">
         {data.map((item) => (
           <div className="" key={item.name}>
-            <div className="text-soft-color text-sm flex ">
+            <div className="text-soft-color text-sm flex flex-wrap">
               <div
                 className="w-3 h-3 rounded-full mr-2"
                 style={{ backgroundColor: item.color }}

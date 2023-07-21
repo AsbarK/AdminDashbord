@@ -14,15 +14,15 @@ function ChartLine(props: Props) {
     <div className="flex h-[100%]">
       <div
         id="chart-data"
-        className="flex-[3_3_0%] flex flex-col justify-around"
+        className="mobile:flex-[3_3_0%] flex flex-col justify-around flex-1"
       >
         <div className="flex my-1 mx-1">
           <img
             src={props.icon}
             alt="total user"
-            className="w-9 rounded-full p-1"
+            className="w-9 rounded-full p-1 mobile:block hidden"
           />
-          <span className="text-main-color text-xl font-bold gap-1">
+          <span className="text-main-color mobile:text-xl font-bold gap-1 text-lg">
             {props.title}
           </span>
         </div>
@@ -35,7 +35,7 @@ function ChartLine(props: Props) {
           </Link>
         </div>
       </div>
-      <div id="chart-graph" className="flex-[2_2_0%] h-[70%]">
+      <div id="chart-graph" className="flex-[2_2_0%] mobile:h-[70%] h-[30%]">
         <ResponsiveContainer width="99%" height="100%" className="mt-1">
           <LineChart data={props.data}>
             <Tooltip

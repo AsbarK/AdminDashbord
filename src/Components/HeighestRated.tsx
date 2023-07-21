@@ -7,9 +7,9 @@ function HeighestRated() {
         <img
           src="rating.svg"
           alt="rating logo"
-          className="w-10 h-10 rounded-full mx-1 object-cover stroke-blue-600"
+          className=" w-10 h-10 rounded-full mx-1 object-cover  "
         />
-        <div className="text-main-color text-2xl font-bold my-5 ">
+        <div className="text-main-color mobile:text-2xl font-bold my-5 text-xl">
           Top Rated Users
         </div>
       </div>
@@ -39,18 +39,18 @@ type Props = {
 };
 function User(props: Props) {
   return (
-    <div className="flex justify-between items-center my-1 hover:bg-dark-bg rounded-2xl m-1 gap-2 p-1">
+    <div className="flex justify-between items-center my-1 hover:bg-dark-bg rounded-2xl m-1 gap-2 p-1 flex-wrap">
       <div className="flex items-center gap-2">
         <img
           src={props.img}
           alt={props.username}
-          className="w-10 h-10 rounded-full mx-1 object-cover"
+          className="w-10 h-10 rounded-full mx-1 object-cover mobile:block hidden"
         />
         <div className="flex flex-col gap-1 items-start">
-          <span className="text-soft-color text-lg font-bold ">
+          <span className="text-soft-color text-lg font-bold mobile:m-0 ml-2">
             {props.username}
           </span>
-          <span className="text-soft-color text-sm font-bold">
+          <span className="text-soft-color text-sm font-bold mobile:m-0 ml-2">
             {props.email}
           </span>
         </div>

@@ -14,6 +14,9 @@ export default {
       gridAutoRows: {
         boxfr: "minmax(180px, auto)",
       },
+      screens: {
+        mobile: "400px",
+      },
     },
   },
   plugins: [],

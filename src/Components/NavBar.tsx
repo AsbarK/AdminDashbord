@@ -5,7 +5,7 @@ import { menu } from "../data";
 function NavBar() {
   return (
     <>
-      <div className=" min-h-screen m-3 border-2 border-dark-bg border-r-soft-bg p-1">
+      <div className=" sm:min-h-screen my-3 ml-3  p-1 h-[100%]">
         <NavItem />
       </div>
     </>
@@ -18,7 +18,9 @@ function NavItem() {
       {menu.map((ele) => {
         return (
           <div key={ele.id}>
-            <span className="mr-1 ">{ele.title}</span>
+            <span className="sm:mr-1 sm:text-soft-color sm:inline-block hidden">
+              {ele.title}
+            </span>
             <div className="my-2">
               {ele.listItems.map((li) => {
                 return (
@@ -30,9 +32,9 @@ function NavItem() {
                     <img
                       src={li.icon}
                       alt={li.title}
-                      className="w-9 rounded-full p-2"
+                      className="md:w-9 mobile:w-16 mobile:p-2 rounded-full p-3  w-16"
                     />
-                    <span className="text-main-color text-xl font-bold ml-3 pt-1">
+                    <span className="hidden md:text-main-color md:text-sm md:font-bold md:ml-3 md:pt-1 md:block lg:text-xl">
                       {li.title}
                     </span>
                   </Link>
