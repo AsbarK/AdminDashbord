@@ -5,7 +5,7 @@ import { menu } from "../data";
 function NavBar() {
   return (
     <>
-      <div className=" min-h-screen m-3 border-2 border-main-bg border-r-soft-bg p-1">
+      <div className=" min-h-screen m-3 border-2 border-dark-bg border-r-soft-bg p-1">
         <NavItem />
       </div>
     </>
