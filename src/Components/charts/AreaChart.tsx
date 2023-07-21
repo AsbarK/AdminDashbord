@@ -55,9 +55,9 @@ const data = [
 const AreaChartCustom = () => {
   return (
     <div style={{ width: "100%", height: "100%" }}>
-      <span className="text-soft-color text-2xl font-bold m-3">
+      <div className="text-main-color text-2xl font-bold m-3">
         Revenue Analytics
-      </span>
+      </div>
       <div className="w-[100%] h-[80%] m-4">
         <ResponsiveContainer width="99%" height="100%">
           <AreaChart

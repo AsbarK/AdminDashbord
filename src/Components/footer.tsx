@@ -2,8 +2,11 @@ function Footer() {
   return (
     <>
       <div className="flex flex-col border-2 border-main-bg border-t-soft-bg justify-center items-center">
-        <div className="text-main-color text-xl font-bold mt-2 p-2">
-          <span className="m-2">Hi, This is</span>K Mohammed Asbar
+        <div className="text-main-color text-xl font-bold mt-2 p-2 flex items-center">
+          <span className="m-2 text-soft-color">Hi, This is</span>{" "}
+          <span className="text-purple-400 border-2 border-dark-bg border-b-soft-color">
+            K Mohammed Asbar
+          </span>
         </div>
         <div className="flex gap-2 items-center">
           <span className="m-2 text-main-color text-xl">Connect:</span>

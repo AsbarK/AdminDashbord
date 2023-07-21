@@ -67,7 +67,7 @@ function HomePage() {
       <div className="border-2 border-soft-bg rounded-xl col-span-2 row-span-2">
         <AreaChartCustom />
       </div>
-      <div className="border-2 border-soft-bg rounded- col-span-1 row-span-1">
+      <div className="border-2 border-soft-bg rounded-xl col-span-1 row-span-1">
         <BarChartBox
           title={barChartBoxVisit.title}
           color={barChartBoxVisit.color}
@@ -75,7 +75,7 @@ function HomePage() {
           chartData={barChartBoxVisit.chartData}
         />
       </div>
-      <div className="border-2 border-soft-bg rounded- col-span-1 row-span-1">
+      <div className="border-2 border-soft-bg rounded-xl col-span-1 row-span-1">
         <BarChartBox
           title={barChartBoxRevenue.title}
           color={barChartBoxRevenue.color}
