@@ -13,7 +13,7 @@ import BarChartBox from "./charts/BarChart";
 import PieChartBox from "./charts/PieChart";
 function HomePage() {
   return (
-    <div className="grid xl:grid-cols-4 auto-rows-boxfr gap-4 my-4 mr-4 p-4 lg:grid-cols-3 sm:border-2 sm:border-dark-bg sm:border-l-soft-bg md:grid-cols-2 grid-cols-1">
+    <div className="grid xl:grid-cols-4 auto-rows-boxfr gap-4 my-4 mr-4 p-4 lg:grid-cols-3 sm:border-2 sm:border-dark-bg sm:border-l-soft-bg sm:grid-cols-2 grid-cols-1">
       <div className="border-2 border-soft-bg rounded-xl row-span-3 col-span-1">
         <HeighestRated />
       </div>
